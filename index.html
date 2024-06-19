@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="output.css">
+</head>
+<body class="overflow-x-hidden *:font-Popins *:text-white">
+    
+    
+    <header class="w-screen transition-all   flex flex-col z-50 bg-black" id="Navbar">
+        <div class="flex">
+            <div class="  flex w-full h-20 justify-between lg:justify-between items-center">
+                <div class=" ml-8 sm:ml-16 md:ml-20">
+                    <h1 class="font-Popins text-xl sm:text-2xl md:text-3xl lg:text-3xl flex text-white  font-bold ">Gurudas's <span class="text-teal-200 pl-2" style="text-shadow: 4px 0 15px #18f1e2;">Portfolio</span></h1>
+                </div>
+                <div class="text-white md:mr-0 lg:mr-14 flex gap-1 lg:gap-3 font-semibold font-Popins text-sm lg:text-base   " id="NavbarItem">
+                    <a class="hover:text-teal-200  pr-3 pl-3 hover:border-b-teal-200" href="#Home">Home</a>
+                    <a  class="hover:text-signature hover:border-b-2 pr-3 pl-3 hover:border-b-teal-200"  href="#Education">Education</a>
+                    <a  class="hover:text-signature hover:border-b-2 pr-3 pl-3 hover:border-b-teal-200"  href="#Services">Services</a>
+                    <a  class="hover:text-signature hover:border-b-2 pr-3 pl-3 hover:border-b-teal-200"  href="#Skills">Skills</a>
+                    <a  class="hover:text-signature hover:border-b-2 pr-3 pl-3 hover:border-b-teal-200"  href="#Project">Projects</a>
+                    <a  class="hover:text-signature hover:border-b-2 pr-3 pl-3 hover:border-b-teal-200"  href="#Contact">Contact</a>
+                </div>
+                <i class="fa-solid fa-bars  mr-6 sm:mr-20 hamburg" id="Hamburg"></i>
+            </div>
+        </div>
+        <div class="w-screen  transition-all top-0 left-0  bg" id="ToogleNav" >
+            <div class="text-white transition  flex flex-col justify-center items-center gap-3 lg:gap-3 font-semibold font-Popins text-base lg:text-base " id="ToogleNavItem" style="display: none;">
+                <a class="hover:text-teal-200 border-b-2 pr-3 pl-3 border-b-black hover:border-b-teal-200 pt-3" href="#Home">Home</a>
+                <a  class="hover:text-signature border-b-2 pr-3 pl-3 border-b-black hover:border-b-teal-200"  href="#Education">Education</a>
+                <a  class="hover:text-signature border-b-2 pr-3 pl-3 border-b-black hover:border-b-teal-200"  href="#Services">Services</a>
+                <a  class="hover:text-signature border-b-2 pr-3 pl-3 border-b-black hover:border-b-teal-200"  href="#Skills">Skills</a>
+                <a  class="hover:text-signature border-b-2 pr-3 pl-3 border-b-black hover:border-b-teal-200"  href="#Project">Projects</a>
+                <a  class="hover:text-signature border-b-2 pr-3 pl-3 border-b-black hover:border-b-teal-200 mb-5"  href="#Contact">Contact</a>
+            </div>
+        </div>
+    </header>
+    <div class="w-screen  h-20 flex fixed" id="NavbarFake"></div>
+
+    <section id="Home" class="w-screen  flex flex-col lg:flex-row bg-zinc-950 pb-32  "  >
+            <div class="flex flex-col justify-center items-center lg:items-start md:justify-normal w-full lg:w-3/5 font-Popins text-center md:text-left pt-24 lg:pl-24" >
+                <h1 class="flex text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold  text-white ">Hi, I'm <span  style="text-shadow: 4px 0 15px #18f1e2;" class="text-signature pl-2">Gurudas</span></h1>
+                <h1 class="flex text-white text-lg sm:text-xl lg:text-2xl font-bold pt-2">I'm a  <span class="text-teal-200 pl-2 " id="element" style="text-shadow: 4px 0 15px #18f1e2;"> </span></h1>
+                <div class="w-full sm:w-3/4 md:w-2/3 lg:w-11/12 pt-4 pl-2 pr-2 lg:pl-0 lg:pr-0 text-center lg:text-left text-sm text-white">
+                    <h1 >I am a skilled developer with a passion for innovation, adapt in technologies like React and django, delivering robust solutions with a creative touch and eager to learn new things.</h1>
+                </div>
+                <div class="flex gap-4 mt-5">
+                    <a href=""><i class="fa-brands  fa-instagram p-2 text-signature border-2 border-teal-200 rounded-full  hover:bg-signature hover:text-white hover:scale-125 transition-all " ></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin p-2 text-teal-200 border-2 border-teal-200 rounded-full  hover:bg-signature hover:text-white hover:scale-125 transition-all "></i></a>
+                    <a href=""><i class="fa-brands fa-twitter p-2 text-signature border-2 border-teal-200 rounded-full hover:bg-signature hover:text-white hover:scale-125 transition-all "></i></a>
+                    <a href=""><i class="fa-brands fa-github p-2 text-signature border-2 border-teal-200 rounded-full hover:bg-signature hover:text-white hover:scale-125 transition-all "></i></a>
+                </div>
+                <div class="mt-10 flex gap-4">
+                    <button class="h-10 rounded-2xl text-black border-2 border-teal-200 w-32 bg-signature" style="box-shadow: 4px 0 15px #18f1e2;"><a href="#Contact">Contact</a></button>
+                    <button class="h-10 w-28 border-2 rounded-2xl text-signature border-teal-300 bg-transparent"><a href="#Contact">Hire</a></button>
+                </div>
+            </div>
+            <div class="flex w-full lg:w-1/2 items-center justify-center">
+                <div class="h-48 w-48 sm:h-52 sm:w-52 md:w-64 md:h-64 lg:h-72  lg:w-72 border-2 border-teal-200 rounded-full bg-cover bg-center mt-20" style="background-image: url('https://external-preview.redd.it/vvhvwZe712gdM6yR_t-kPsbRfBCuvZWaUhqfAhj_Or0.png?format=pjpg&auto=webp&s=d18ca0556d171eb74382eb8eb279543dffd6767b');" >
+                </div>
+            </div>
+        </section>
+    <section id="Education" class="w-screen relative  bg-black pb-28">
+        <div class="w-screen flex justify-center font-Popins">
+            <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl pt-8 font-bold">Education</h1>
+        </div>
+        <div class="w-1  absolute left-4 md:left-10 lg:left-2/4 top-36 bg-signature" style="height: 950px;">
+            <i class="fa-sharp fa-solid fa-circle absolute top-10 text-signature " style="left: -6.5px; text-shadow: 2px 1px 15px #18f1e2;"></i>
+            <i class="fa-sharp fa-solid fa-circle absolute  text-signature " style="left: -6.5px; text-shadow: 2px 1px 15px #18f1e2; top: 250px;"></i>
+            <i class="fa-sharp fa-solid fa-circle absolute  text-signature " style="left: -6.5px; text-shadow: 2px 1px 15px #18f1e2; top: 480px;"></i>
+            <i class="fa-sharp fa-solid fa-circle absolute  text-signature " style="left: -6.5px; text-shadow: 2px 1px 15px #18f1e2; top: 750px;  "></i>
+        </div>
+        <div >
+            <div class="w-4/5 transition-all h-36 sm:h-32   sm:w-96 mt-28 flex font-Popins flex-col  border-2 border-teal-200 hover:scale-110  cursor-pointer  bg-gray-950" style="border-radius: 60px; box-shadow: 2px 0 15px #18f1e2; margin-left: 13%;" >
+                <h1 class="lg:text-right text-left pt-5 pl-8 lg:pl-0 lg:pr-8 font-medium text-lg md:text-xl">Secondary Education</h1>
+                <h3 class="pt-2 lg:text-right text-left lg:pr-8 pr-0 pl-8 text-sm ">I completed my 12th grade in 2023 from Delhi showcasing strong academic performance.</h3>
+            </div>
+        </div>
+        <div >
+            <div class="w-4/5 transition-all h-32 sm:h-32  sm:w-96 mt-28 flex font-Popins flex-col  border-2 border-teal-200  bg-gray-950 cursor-pointer hover:scale-110 coding" style="border-radius: 60px; box-shadow: 2px 0 15px #18f1e2; " >
+                <h1 class="text-left pt-5   pl-8 font-medium text-lg md:text-xl">Coding Journey</h1>
+                <h3 class="pt-2  text-left lg:pr-8 pr-0 pl-8 text-sm ">Started From Python and now i am Full Stack Developer with a lot of joy and enthusiasm</h3>
+            </div>
+        </div>
+        <div >
+            <div class="w-4/5 transition-all h-36 sm:h-36 sm:w-96 mt-32 flex font-Popins flex-col  border-2 border-teal-200 hover:scale-110 cursor-pointer  bg-gray-950" style="border-radius: 60px; box-shadow: 2px 0 15px #18f1e2; margin-left: 13%;" >
+                <h1 class="lg:text-right text-left pt-5 pl-8 lg:pl-0 lg:pr-8 font-medium text-lg md:text-xl">Higher Education</h1>
+                <h3 class="pt-2 lg:text-left text-left  lg:pl-8 pr-4 pl-8 text-sm ">Currently Doing BCA in DAV Centardy College,Faridabad for the sake of brigther Future.</h3>
+            </div>
+        </div>
+        <div >
+            <div class="w-4/5 transition-all h-32 sm:h-32  sm:w-96 mt-28 flex font-Popins flex-col  border-2 border-teal-200  bg-gray-950 hover:scale-110  cursor-pointer coding" style="border-radius: 60px; box-shadow: 2px 0 15px #18f1e2; " >
+                <h1 class="text-left pt-5   pl-8 font-medium text-lg md:text-xl">Internship</h1>
+                <h3 class="pt-2  text-left lg:pr-8 pr-0 pl-8 text-sm ">I haven't done any internship yet but seeking right through for the opportunity.</h3>
+            </div>
+        </div>
+    </section>
+    <section id="Services" class="w-screen pb-20 bg-zinc-950">
+            <div class="w-full flex justify-center font-Popins">
+                <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold pt-10">Services</h1>
+            </div>
+
+            <div class="w-full font-Popins flex items-center flex-col lg:flex-row mt-12 justify-center gap-8">
+                
+                <div class="h-64 sm:h-60 border-2 border-teal-300 w-11/12 sm:w-3/4 md:w-3/5 lg:w-2/5 rounded-3xl bg-signature hover:scale-105 cursor-pointer transition-all hover:bg-white" style="box-shadow: 2px 0 15px #18f1e2; " >
+                    <h1 class="text-black pt-10 pl-6 sm:pt-12 sm:pl-12 font-bold text-2xl">Full Stack Developer</h1>
+                    <h1 class="text-black pl-6  sm:pl-12  pt-3 pr-4 font-semibold"> 
+                        I am a full stack developer with strong skills in both frontend and backend technologies, capable of creating seamless and efficient web solutions.</h1>
+                </div>
+                
+                <div class="h-64 sm:h-60 border-2 border-teal-300 w-11/12 sm:w-3/4 md:w-3/5 lg:w-2/5 rounded-3xl bg-signature hover:scale-105 cursor-pointer transition-all hover:bg-white" style="box-shadow: 2px 0 15px #18f1e2; " >
+                    <h1 class="text-black pt-10 pl-6 sm:pt-12 sm:pl-12 font-bold text-2xl">Front-end Developer</h1>
+                    <h1 class="text-black pl-6  sm:pl-12  pt-3 pr-4 font-semibold"> Experienced frontend developer skilled in creating responsive, user-friendly interfaces. Proficient in HTML, CSS, JavaScript, and various frontend frameworks.</h1>
+                </div>
+                
+            </div>
+
+            <div class="w-full font-Popins flex items-center flex-col lg:flex-row mt-8 justify-center gap-8">                
+                
+                    <div class="h-64 sm:h-60 border-2 border-teal-300 w-11/12 sm:w-3/4 md:w-3/5 lg:w-2/5 rounded-3xl bg-signature hover:scale-105 cursor-pointer transition-all hover:bg-white" style="box-shadow: 2px 0 15px #18f1e2; " >
+                    <h1 class="text-black pt-10 pl-6 sm:pt-12 sm:pl-12 font-bold text-2xl">Back-end Developer</h1>
+                    <h1 class="text-black pl-6  sm:pl-12  pt-3 pr-4 font-semibold"> As a Backend Developer, I have a good knowledge in Backend, Proficient in Python, and their library like django and can be useful for any company.</h1>
+                </div>
+                
+                <div class="h-64 sm:h-60 border-2 border-teal-300 w-11/12 sm:w-3/4 md:w-3/5 lg:w-2/5 rounded-3xl bg-signature hover:scale-105 cursor-pointer transition-all hover:bg-white" style="box-shadow: 2px 0 15px #18f1e2; " >
+                    <h1 class="text-black pt-10 pl-6 sm:pt-12 sm:pl-12 font-bold text-2xl">Web Developer</h1>
+                    <h1 class="text-black pl-6  sm:pl-12  pt-3 pr-4 font-semibold">Proficient web developer with expertise in both frontend and backend technologies, adept at creating responsive, user-friendly websites and efficient, scalable applications.</h1>
+                </div>
+
+            </div>
+
+    </section>
+    <section id="Skills" class="w-screen  bg-black pb-36">
+        <div class="w-full flex justify-center font-Popins">
+            <h1 class="text-3xl sm:text-4xl md:text-7xl lg:text-7xl  font-bold pt-10">Skills</h1>
+        </div>
+        <div class="w-full flex items-center justify-center mt-14 font-Popins">
+            <div class="w-11/12  sm:w-4/5 md:w-3/4 ">
+                <h1 class="text-center text-sm sm:text-base md:text-lg">I specialize in full-stack development, adeptly utilizing HTML, CSS, JavaScript, Python, React, Redux, Tailwind CSS, and Django. My expertise spans frontend aesthetics to backend functionality, ensuring seamless and dynamic web solutions.</h1>
+            </div>
+        </div>
+        <div class="w-screen flex flex-col items-center justify-center">
+            <div class="w-screen md:w-4/5 gap-20 md:gap-0    flex justify-between items-center mt-20 flex-col font-Popins md:flex-row" >
+                <div class="w-3/4 sm:w-3/5 md:w-2/5 flex   bg-white h-5 rounded-3xl " >
+                    <div class="bg-signature   flex justify-between h-full rounded-3xl" style="width: 93%;" >
+                        <h1 class="text-xl -mt-7 ">HTML</h1>
+                        <h1 class="text-xl -mt-7 pl-2 ">93%</h1>
+                    </div>
+                </div>
+                <div class="w-3/4 sm:w-3/5 md:w-2/5 flex  bg-white h-5 rounded-3xl " >
+                    <div class="bg-signature flex justify-between h-full rounded-3xl" style="width: 90%;">
+                        <h1 class="text-xl -mt-7 ">CSS</h1>
+                        <h1 class="text-xl -mt-7 pl-2 ">90%</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="w-screen md:w-4/5 gap-20 md:gap-0 flex justify-between items-center mt-20 flex-col font-Popins md:flex-row">
+                <div class="w-3/4 sm:w-3/5 md:w-2/5 flex  bg-white h-5 rounded-3xl " >
+                    <div class="bg-signature flex justify-between h-full rounded-3xl" style="width: 85%;">
+                        <h1 class="text-xl -mt-7 ">JavaScript</h1>
+                        <h1 class="text-xl -mt-7 pl-2 ">85%</h1>
+                    </div>
+                </div>
+                <div class="w-3/4 sm:w-3/5 md:w-2/5 flex  bg-white h-5 rounded-3xl " >
+                    <div class="bg-signature flex justify-between h-full rounded-3xl" style="width: 90%;">
+                        <h1 class="text-xl -mt-7 ">Tailwind Css</h1>
+                        <h1 class="text-xl -mt-7 pl-2 ">90%</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="w-screen md:w-4/5 gap-20 md:gap-0 flex justify-between items-center mt-20 flex-col font-Popins md:flex-row">
+                <div class="w-3/4 sm:w-3/5 md:w-2/5 flex  bg-white h-5 rounded-3xl " >
+                    <div class="bg-signature flex justify-between h-full rounded-3xl" style="width: 82%;">
+                        <h1 class="text-xl -mt-7 ">React</h1>
+                        <h1 class="text-xl -mt-7 pl-2 ">82%</h1>
+                    </div>
+                </div>
+                <div class="w-3/4 sm:w-3/5 md:w-2/5 flex  bg-white h-5 rounded-3xl " >
+                    <div class="bg-signature flex justify-between h-full rounded-3xl" style="width: 80%;">
+                        <h1 class="text-xl -mt-7 ">Redux</h1>
+                        <h1 class="text-xl -mt-7 pl-2 ">80%</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="w-screen md:w-4/5 gap-20 md:gap-0 flex justify-between items-center mt-20 flex-col font-Popins md:flex-row">
+                <div class="w-3/4 sm:w-3/5 md:w-2/5 flex  bg-white h-5 rounded-3xl " >
+                    <div class="bg-signature flex justify-between h-full rounded-3xl" style="width: 82%;">
+                        <h1 class="text-xl -mt-7 ">React</h1>
+                        <h1 class="text-xl -mt-7 pl-2 ">82%</h1>
+                    </div>
+                </div>
+                <div class="w-3/4 sm:w-3/5 md:w-2/5 flex  bg-white h-5 rounded-3xl " >
+                    <div class="bg-signature flex justify-between h-full rounded-3xl" style="width: 80%;">
+                        <h1 class="text-xl -mt-7 ">Redux</h1>
+                        <h1 class="text-xl -mt-7 pl-2 ">80%</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="Project" class="pb-10 w-screen font-Popins bg-zinc-950">
+        <div class="w-screen  flex justify-center font-Popins">
+            <h1 class="text-3xl  sm:text-4xl md:text-5xl lg:text-6xl pt-8 font-bold">Project</h1>
+        </div>
+        <div class="w-screen flex items-center justify-center mt-2">
+            <div class="w-11/12  sm:w-4/5 md:w-3/4 ">
+                <h1 class="text-center text-sm sm:text-base md:text-lg">I am new in the development so projects are limited yet but with the Time I will create greater and stronger Projects.</h1>
+            </div>
+        </div>
+        <div class="flex items-center justify-center flex-col md:flex-row mt-20 gap-10 w-screen">
+            <div class="pb-4 h-80 w-72 rounded-3xl flex flex-col items-center justify-center border-teal-200 border-2 bg-gray-800">
+                <div class="w-60  h-44 bg-cover bg-center border rounded-3xl" style="background-image: url('https://image1.jdomni.in/preview-theme/3/7/4/48f9c1db-47a3-469c-8159-583772c848a8.jpeg');"></div>
+                <div class="w-full ">
+                    <div class="flex justify-center">
+                        <h3 class="text-left text-sm pr-3 pt-5 text-gray-500">Website Development</h3>
+                        <a target="_blank" href="https://e-commerce-website-black-six.vercel.app/"><i class="fa-brands fa-github p-2 mt-3 ml-5 text-signature border-2 border-teal-200 rounded-full  hover:bg-signature hover:text-white hover:scale-125 transition-all "></i></a>
+                    </div>
+                    <h1 class="text-xl pl-4 pt-3 ">A E Commerce Website</h1>
+                </div>
+            </div>
+            <div class="pb-4 h-80 w-72 rounded-3xl flex flex-col items-center justify-center border-teal-200 border-2 bg-gray-800">
+                <div class="w-60  h-44 bg-cover bg-center border rounded-3xl" style="background-image: url('https://muffingroup.com/blog/wp-content/uploads/2021/07/becof.jpg');"></div>
+                <div class="w-full ">
+                    <div class="flex justify-center">
+                        <h3 class="text-left text-sm pr-3 pt-5 text-gray-500">Website Design</h3>
+                        <a href="https://cafe-website-unaz.vercel.app/"><i class="fa-brands fa-github p-2 mt-3 ml-5 text-signature border-2 border-teal-200 rounded-full  hover:bg-signature hover:text-white hover:scale-125 transition-all "></i></a>
+                    </div>
+                    <h1 class="text-xl pl-4 pt-3 ">A React Coffe Web Design</h1>
+                </div>
+            </div>
+            <div class="pb-4 h-80 w-72 rounded-3xl flex flex-col items-center justify-center border-teal-200 border-2 bg-gray-800">
+                <div class="w-60  h-44 bg-cover bg-center border rounded-3xl" style="background-image: url('https://s3-alpha.figma.com/hub/file/2477810093/c41260d4-7e79-44cf-b759-411368380fa0-cover.png');"></div>
+                <div class="w-full ">
+                    <div class="flex justify-center">
+                        <h3 class="text-left text-sm pr-3 pt-5 text-gray-500">Website Development</h3>
+                        <a target="_blank" href=" https://gurudas-bhardwaj.github.io/Weather-App/"><i class="fa-brands fa-github p-2 mt-3 ml-5 text-signature border-2 border-teal-200 rounded-full  hover:bg-signature hover:text-white hover:scale-125 transition-all "></i></a>
+                    </div>
+                    <h1 class="text-xl pl-4 pt-3 ">A Weather Api Project</h1>
+                </div>
+            </div>
+        </div>
+        <div class="flex items-center justify-center flex-col md:flex-row mt-20 gap-10 w-screen">
+            <div class="pb-4 h-80 w-72 rounded-3xl flex flex-col items-center justify-center border-teal-200 border-2 bg-gray-800">
+                <div class="w-60  h-44 bg-cover bg-center border rounded-3xl" style="background-image: url('https://codecanyon.img.customer.envatousercontent.com/files/500234109/tic_tac-Online_590x300.png?auto=compress%2Cformat&q=80&fit=crop&crop=top&max-h=8000&max-w=590&s=524e85515a6d2442bed05f1cc2971d46');"></div>
+                <div class="w-full ">
+                    <div class="flex justify-center">
+                        <h3 class="text-left text-sm pr-3 pt-5 text-gray-500">Website Development</h3>
+                        <a target="_blank" href=" https://gurudas-bhardwaj.github.io/Tic-Tac-Toe-Game/"><i class="fa-brands fa-github p-2 mt-3 ml-5 text-signature border-2 border-teal-200 rounded-full  hover:bg-signature hover:text-white hover:scale-125 transition-all "></i></a>
+                    </div>
+                    <h1 class="text-xl text-center pt-3 ">Tic Tac Toe</h1>
+                </div>
+            </div>
+            <div class="pb-4 h-80 w-72 rounded-3xl flex flex-col items-center justify-center border-teal-200 border-2 bg-gray-800">
+                <div class="w-60  h-44 bg-cover bg-center border rounded-3xl" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTURXZUCgfqY9lvimKXeZJ7gsB40T8x3g_56g&s');"></div>
+                <div class="w-full ">
+                    <div class="flex justify-center">
+                        <h3 class="text-left text-sm pr-3 pt-5 text-gray-500">Website Developer</h3>
+                        <a target="_blank" href="https://gurudas-bhardwaj.github.io/Quiz-App/"><i class="fa-brands fa-github p-2 mt-3 ml-5 text-signature border-2 border-teal-200 rounded-full  hover:bg-signature hover:text-white hover:scale-125 transition-all "></i></a>
+                    </div>
+                    <h1 class="text-xl text-center pt-3 ">A Quiz App</h1>
+                </div>
+            </div>
+            <div class="pb-4 h-80 w-72 rounded-3xl flex flex-col items-center justify-center border-teal-200 border-2 bg-gray-800">
+                <div class="w-60  h-44 bg-cover bg-center border rounded-3xl" style="background-image: url('https://advanttechnology.com/wp-content/uploads/2022/07/Digital-Dictionary-Online-Advertising-101-Word-Cloud-Advant-Technology-1024x589.png');"></div>
+                <div class="w-full ">
+                    <div class="flex justify-center">
+                        <h3 class="text-left text-sm pr-3 pt-5 text-gray-500">Website Development</h3>
+                        <a target="_blank" href=" https://gurudas-bhardwaj.github.io/Weather-App/"><i class="fa-brands fa-github p-2 mt-3 ml-5 text-signature border-2 border-teal-200 rounded-full  hover:bg-signature hover:text-white hover:scale-125 transition-all "></i></a>
+                    </div>
+                    <h1 class="text-xl text-center pt-3 ">A Weather Api Project</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="Contact"  class="w-screen pb-20 bg-black">
+        <div class="w-screen flex  justify-center font-Popins">
+            <h1 class="text-3xl flex gap-3 sm:text-4xl md:text-5xl lg:text-6xl pt-8 font-bold">Contact <span class="text-signature">Me</span></h1>
+        </div>
+        <div class="w-screen flex  mt-20 justify-center items-center font-Popins">
+            <div class="">
+                <form action="" method="POST"  class="w-full flex  flex-col md:flex-row gap-6">
+                {% csrf_token %}
+                    <div class="flex flex-col gap-5">
+                        <input type="text" required class="w-80 sm:w-96 bg-black rounded-xl focus:outline-none h-14 border-2  border-teal-300 pl-3" placeholder="Full Name" name="Name" id="">
+                        <input type="text" required class="w-80 sm:w-96 bg-black rounded-xl focus:outline-none h-14 border-2 border-teal-300 pl-3" placeholder="Email" name="Email" id="">
+                        <input type="text" required class="w-80 sm:w-96 bg-black rounded-xl focus:outline-none h-14 border-2 border-teal-300 pl-3" placeholder="Phone Number" name="Number" id="">
+                        <input type="text" required class="w-80 sm:w-96 bg-black rounded-xl focus:outline-none h-14 border-2 border-teal-300 pl-3" placeholder="Subject" name="Subject" id="">
+                    </div>
+                    <div class="flex flex-col">
+                        <textarea name="Message" required class="h-52 focus:outline-none pl-4 w-80 sm:w-96 bg-black border-2 border-teal-200 rounded-xl pt-4  resize-none" placeholder="Message" id=""></textarea>
+                        <button class="h-10 rounded-2xl mt-7 ml-2 text-black border-2 border-teal-200 w-32 bg-signature" style="box-shadow: 4px 0 15px #18f1e2;">Contact</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="w-screen pb-10 flex flex-col justify-center items-center font-Popins bg-zinc-950">
+        <div class="flex gap-4  pt-10 ">
+            <a href="https://www.instagram.com/whynott_.gurudas/"><i class="fa-brands fa-instagram p-2 text-signature border-2 border-teal-200 rounded-full  hover:bg-signature hover:text-white hover:scale-125 transition-all " ></i></a>
+            <a href=""><i class="fa-brands fa-linkedin p-2 text-teal-200 border-2 border-teal-200 rounded-full  hover:bg-signature hover:text-white hover:scale-125 transition-all "></i></a>
+            <a href=""><i class="fa-brands fa-twitter p-2 text-signature border-2 border-teal-200 rounded-full hover:bg-signature hover:text-white hover:scale-125 transition-all "></i></a>
+            <a href="https://github.com/Gurudas-Bhardwaj"><i class="fa-brands fa-github p-2 text-signature border-2 border-teal-200 rounded-full hover:bg-signature hover:text-white hover:scale-125 transition-all "></i></a>
+        </div>
+        <div class="flex flex-col w-screen text-center font-medium">
+            <h1 class="pt-3">For any need or Query Please contact me on above sources or leave a message.</h1>
+            <h1 class="pt-1">Gurudas | @gursad5@gmail.com</h1>
+        </div>
+    </section>
+
+</body>
+<script src="script.js"></script>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+<script>
+    var typed = new Typed('#element', {
+      strings: ['Full Stack Developer', 'Frontend Developer',"Backend Developer","Web Developer"],
+      typeSpeed: 100,
+      backSpeed:50,
+      looped:true,
+    });
+  </script>
+  
+<!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    AOS.init({
+      once:true,
+    })
+  </script> -->
+  
+
+</html>

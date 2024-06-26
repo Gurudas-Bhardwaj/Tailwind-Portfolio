@@ -63,3 +63,28 @@ allNavlink.forEach((e) => {
         
     });
 });
+
+
+document.getElementById('submitBtn').addEventListener('click', function() {
+  const formData = new FormData(document.getElementById('myForm'));
+
+  fetch('https://gurudas.pythonanywhere.com/', {
+    method: 'POST',
+    body: formData,
+    headers: {
+      'Accept': 'application/json',
+    },
+  })
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Network response was not ok ' + response.statusText);
+    }
+    return response.json();
+  })
+  .then(data => {
+    console.log('Success:', data);
+  })
+  .catch(error => {
+    console.error('Error:', error);
+  });
+});

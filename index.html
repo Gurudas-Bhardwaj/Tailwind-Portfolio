@@ -283,16 +283,16 @@
         </div>
         <div class="w-screen flex  mt-20 justify-center items-center font-Popins">
             <div class="">
-                <form action="" id="myForm"  class="w-full flex  flex-col md:flex-row gap-6">
+                <form  id="myForm" method="POST"  class="w-full flex  flex-col md:flex-row gap-6">
                     <div class="flex flex-col gap-5">
-                        <input type="text" required class="w-80 sm:w-96 bg-black rounded-xl focus:outline-none h-14 border-2  border-teal-300 pl-3" placeholder="Full Name" name="Name" id="">
-                        <input type="text" required class="w-80 sm:w-96 bg-black rounded-xl focus:outline-none h-14 border-2 border-teal-300 pl-3" placeholder="Email" name="Email" id="">
-                        <input type="text" required class="w-80 sm:w-96 bg-black rounded-xl focus:outline-none h-14 border-2 border-teal-300 pl-3" placeholder="Phone Number" name="Number" id="">
-                        <input type="text" required class="w-80 sm:w-96 bg-black rounded-xl focus:outline-none h-14 border-2 border-teal-300 pl-3" placeholder="Subject" name="Subject" id="">
+                        <input type="text" required class="w-80 sm:w-96 bg-black rounded-xl focus:outline-none h-14 border-2  border-teal-300 pl-3" placeholder="Full Name" name="Name" id="Name">
+                        <input type="email" required class="w-80 sm:w-96 bg-black rounded-xl focus:outline-none h-14 border-2 border-teal-300 pl-3" placeholder="Email" name="Email" id="Email">
+                        <input type="text" required class="w-80 sm:w-96 bg-black rounded-xl focus:outline-none h-14 border-2 border-teal-300 pl-3" placeholder="Phone Number" name="Number" id="Number">
+                        <input type="text" required class="w-80 sm:w-96 bg-black rounded-xl focus:outline-none h-14 border-2 border-teal-300 pl-3" placeholder="Subject" name="Subject" id="Subject">
                     </div>
                     <div class="flex flex-col">
-                        <textarea name="Message" required class="h-52 focus:outline-none pl-4 w-80 sm:w-96 bg-black border-2 border-teal-200 rounded-xl pt-4  resize-none" placeholder="Message" id=""></textarea>
-                        <button class="h-10 rounded-2xl mt-7 ml-2 text-black border-2 border-teal-200 w-32 bg-signature" id="submitBtn" style="box-shadow: 4px 0 15px #18f1e2;">Contact</button>
+                        <textarea name="Message" required class="h-52 focus:outline-none pl-4 w-80 sm:w-96 bg-black border-2 border-teal-200 rounded-xl pt-4  resize-none" placeholder="Message" id="Message"></textarea>
+                        <button class="h-10 rounded-2xl mt-7 ml-2 text-black border-2 border-teal-200 w-32 bg-signature"  id="submitBtn"   style="box-shadow: 4px 0 15px #18f1e2;">Contact</button>
                     </div>
                 </form>
             </div>

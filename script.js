@@ -85,10 +85,8 @@ async function sendData() {
     let Subject = SubjectData.value;
     let Message = MessageData.value;
 
-    // Disable submit button to prevent multiple clicks
-    Submit.disabled = true;
 
-    try {
+    
         let response = await fetch('https://gurudas.pythonanywhere.com/api/ContactData/', {
             method: "POST",
             headers: {
@@ -102,12 +100,7 @@ async function sendData() {
         } else {
             console.log("Unsuccessful");
         }
-    } catch (error) {
-        console.log(error);
-    } finally {
-        // Enable submit button after request completes (success or failure)
-        Submit.disabled = false;
-    }
+    
 }
 
 Submit.addEventListener('click', () => {

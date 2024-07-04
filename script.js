@@ -78,33 +78,42 @@ allNavlink.forEach((e) => {
 
 
 
-async function sendData(){
-    let Name=NameData.value
-    let Email=EmailData.value
-    let Number=ContactData.value
-    let Subject=SubjectData.value
-    let Message=MessageData.value
-    try{
-    let response=await fetch('https://gurudas.pythonanywhere.com/api/ContactData/',{
-        method:"POST",
-        headers:{
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({Name,Email,Number,Subject,Message})
-    })
-    if (response.ok){
-        console.log("Form Successfully Sumbitted");
-    }else {
-        console.log("unsuccesfull");
-    }}
-    catch(error){
+async function sendData() {
+    let Name = NameData.value;
+    let Email = EmailData.value;
+    let Number = ContactData.value;
+    let Subject = SubjectData.value;
+    let Message = MessageData.value;
+
+    // Disable submit button to prevent multiple clicks
+    Submit.disabled = true;
+
+    try {
+        let response = await fetch('https://gurudas.pythonanywhere.com/api/ContactData/', {
+            method: "POST",
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ Name, Email, Number, Subject, Message })
+        });
+
+        if (response.ok) {
+            console.log("Form Successfully Submitted");
+        } else {
+            console.log("Unsuccessful");
+        }
+    } catch (error) {
         console.log(error);
+    } finally {
+        // Enable submit button after request completes (success or failure)
+        Submit.disabled = false;
     }
 }
 
-Submit.addEventListener('click',()=>{
-    sendData()
-})
+Submit.addEventListener('click', () => {
+    sendData();
+});
+
 
 
 
